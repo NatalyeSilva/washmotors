@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenuBtn.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            mobileMenu.classList.toggle('active');
+            const isActive = mobileMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('hidden', !isActive);
         });
 
         // cuando se toca un link se cierra el menu movil
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
+                mobileMenu.classList.add('hidden');
             });
         });
     } else {

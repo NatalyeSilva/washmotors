@@ -16,7 +16,6 @@ html {
 }
 
 .mobile-menu {
-    display: none;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -24,7 +23,6 @@ html {
 }
 
 .mobile-menu.active {
-    display: block;
     max-height: 1000px;
     overflow: visible;
     opacity: 1;
