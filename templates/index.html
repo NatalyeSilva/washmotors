@@ -631,13 +631,14 @@
 
         updateCarousel();
 
-        // Auto-rotate every 3 seconds
+        // Auto-rotate every 1 second
         if (totalSlides > 1) {
             setInterval(() => {
                 currentSlide = (currentSlide + 1) % totalSlides;
                 updateCarousel();
-            }, 3000);
+            }, 1500);
         }
+        
     </script>
 
     <script>
